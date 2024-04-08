@@ -1,0 +1,45 @@
+@font-face {
+    font-family: koulen;
+    src: url(https://rightfontapp.com/family/koulen);
+  }
+
+  .footer {
+    font-family: 'koulen';
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*De link naar de privacyverklaring*/
+.privacy-link {
+  color: #73C3E0;
+  margin-left: 10px;
+}
+
+.social-icons {
+    display: flex;
+}
+
+
+.social-icons a {
+  color: white;
+  margin-right: 10px; 
+  font-size: 24px; 
+}
+
+p {
+    margin: 0;
+    text-align: center;
+}
+
+/* Maakt de website responsive */
+@media only screen and (max-width: 767px) {
+  .social-icons a {
+    color: white;
+    margin-right: 10px; 
+    font-size: 24px; 
+  }
+}

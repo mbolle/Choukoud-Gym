@@ -1,0 +1,189 @@
+@font-face {
+    font-family: koulen;
+    src: url(https://rightfontapp.com/family/koulen);
+  }
+
+h1.titel {
+    color: white; 
+    text-align: center; 
+    margin-top: 60px;
+    margin-bottom: 0px; 
+    font-size: 96px;
+}
+
+h2.header {
+    color: white; 
+    text-align: center; 
+    margin-top: 20px;
+    margin-bottom: 0px; 
+    font-size: 64px;
+}
+
+h2.headerlidmaatschap {
+    color: white; 
+    text-align: left; 
+    margin-top: 20px;
+    margin-bottom: 0px; 
+    border-left: 8px solid #73C3E0; /* Zorgt voor een blauwe streep links van de tekst */
+    padding-left: 10px;
+    font-size: 64px;
+}
+
+h3.subheader {
+    color: white; 
+    text-align: left; 
+    margin-top: 30px;
+    margin-bottom: 0px; 
+    font-size: 40px;
+    border-left: 8px solid #73C3E0; /* Zorgt voor een blauwe streep links van de tekst */
+    padding-left: 10px;
+}
+
+h4.subtitel{
+    color: white; 
+    text-align: center; 
+    margin-top: 0px;
+    margin-bottom: 20px; 
+    font-size: 24px;
+}
+
+/* Zorgt ervoor dat er blauwe woorden in de tekst zijn */
+.titel .blue, 
+.paragraph .blue,
+.header .blue,
+.headerlidmaatschap .blue,
+.subheader .blue,
+.subtitel .blue {
+    color: #73C3E0;
+}
+
+p {
+    color: white;
+    font-family: 'koulen';
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0 0 20px 0;
+}
+
+.paragraph {
+    overflow: hidden; 
+}
+
+/* Zorgt voor een blauwe streep links van de tekst */
+.paragraph,
+.intro .paragraph,
+.beginner .paragraph,
+.professional .paragraph,
+.gewichtsklassen .paragraph,
+.sportaanbod .paragraph,
+.privacyverklaring .paragraph {
+    text-align: left;
+    border-left: 8px solid #73C3E0; 
+    padding-left: 10px; 
+}
+
+h2,h3 {
+    color: white;
+    font-family: 'koulen';
+    margin: 0 0 20px 0;
+}
+
+.sponsor .subheader {
+    margin-bottom: 10px;
+}
+
+/* Zorgt ervoor dat de header doorgetrokken word over twee colummen */
+.h1-wrapper,
+.h4-wrapper {
+    grid-column: 1 / span 2; 
+}
+
+/* Maakt de website responsive */
+@media only screen and (max-width: 767px) {
+    h1.titel {
+        color: white; 
+        text-align: center; 
+        margin-top: 60px;
+        margin-bottom: 0px; 
+        font-size: 32px;
+    }
+    
+    h2.header {
+        color: white; 
+        text-align: center; 
+        margin-top: 20px;
+        margin-bottom: 0px; 
+        font-size: 14px;
+    }
+    
+    h2.headerlidmaatschap {
+        color: white; 
+        text-align: left; 
+        margin-top: 20px;
+        margin-bottom: 0px; 
+        border-left: 8px solid #73C3E0; /* Zorgt voor een blauwe streep links van de tekst */
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    
+    h3.subheader {
+        color: white; 
+        text-align: left; 
+        margin-top: 30px;
+        margin-bottom: 0px; 
+        font-size: 14px;
+        border-left: 8px solid #73C3E0; /* Zorgt voor een blauwe streep links van de tekst */
+        padding-left: 10px;
+    }
+    
+    h4.subtitel{
+        color: white; 
+        text-align: center; 
+        margin-top: 0px;
+        margin-bottom: 20px; 
+        font-size: 10px;
+    }
+    
+    /* Zorgt ervoor dat er blauwe woorden in de tekst zijn */
+    .titel .blue, 
+    .paragraph .blue,
+    .header .blue,
+    .headerlidmaatschap .blue,
+    .subheader .blue,
+    .subtitel .blue {
+        color: #73C3E0;
+    }
+    
+    p {
+        color: white;
+        font-family: 'koulen';
+        font-size: 10px;
+        line-height: 28px;
+        padding: 0 0 20px 0;
+    }
+    
+    /* Zorgt voor een blauwe streep links van de tekst */
+    .paragraph,
+    .intro .paragraph,
+    .beginner .paragraph,
+    .professional .paragraph,
+    .gewichtsklassen .paragraph,
+    .sportaanbod .paragraph,
+    .privacyverklaring .paragraph {
+        text-align: left;
+        border-left: 8px solid #73C3E0; 
+        padding-left: 10px; 
+    }
+    
+    h2,h3 {
+        color: white;
+        font-family: 'koulen';
+        margin: 0 0 20px 0;
+    }
+    
+    .h1-wrapper,
+    .h4-wrapper {
+        grid-column: 1 / span 2; 
+    }
+    
+}

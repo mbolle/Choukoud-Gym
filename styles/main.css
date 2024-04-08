@@ -1,0 +1,6 @@
+/* alle stylesheets worden geimporteerd naar deze main.css stylesheet */
+@import 'layout.css';
+@import 'main.css';
+@import 'header.css';
+@import 'typography.css';
+@import 'footer.css';

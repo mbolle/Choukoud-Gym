@@ -1,0 +1,281 @@
+/* layout */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* deze eigenschap zorgt ervoor dat de padding en margin mee worden gerekend bij het definiëren van de totale breedte en hoogte van een element */
+}
+
+/* Het lettertype over de gehele body en achtergond kleur */
+body {
+	font-family: 'koulen';
+	background-color: #17262C;
+}
+
+.container {
+	width: 1100px;
+	overflow: hidden;
+	padding: 40px;
+	margin: 0 auto; 
+	background-color: #17262C;
+}
+
+.intro {
+	padding: 0 0 20px 0;
+}
+
+.column-wrapper,
+main {
+	width: 100%;
+	overflow: hidden; 
+}
+
+.column-wrapper {
+	display: flex;
+	padding: 0 0 20px 0;
+}
+
+.column {
+	padding: 0 40px 0 0;
+}
+
+.SponsorsEnPartners img {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 10px; 
+  }
+
+  /* img op de homepage */
+figure {
+    position: relative;
+}
+
+figure img {
+	width: 100%;
+}
+
+/* zorgt voor een blauwe streep onder en boven de foto, heb dit opgezocht met behulp van chatgpt */
+figure::before,
+figure::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 8px; 
+    background-color: #73C3E0;
+}
+
+/* zorgt voor de afstand van de blauwe lijn boven de foto */
+figure::before {
+    top: 0;
+}
+
+/* zorgt voor de afstand van de blauwe lijn onder de foto */
+figure::after {
+    bottom: 0;
+}
+
+/* Een apparte container voor de lidmaatschap pagina waarbij ik grid gebruik */
+.containerlid {
+	width: 1100px;
+	overflow: hidden; 
+	padding: 40px;
+	margin: 0 auto; 
+	background-color: #17262C;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+	justify-items: center;
+}
+
+.lidmaatschapimage {
+	position: relative;
+	width: 100%;
+    margin: 0 auto;
+    grid-column: 2;
+}
+
+.contactimage {
+    position: relative;
+    grid-column: 1 / 2; 
+}
+
+.contactimage img,
+.lidmaatschapimage img {
+    max-width: 100%; 
+    display: block;
+
+}
+
+/* zorgt voor een blauwe streep onder en boven de foto, heb dit opgezocht met behulp van chatgpt */
+.lidmaatschapimage::before,
+.lidmaatschapimage::after,
+.contactimage::before,
+.contactimage::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 8px; 
+    background-color: #73C3E0;
+}
+
+/* zorgt voor de afstand van de blauwe lijn boven de foto */
+.lidmaatschapimage::before,
+.contactimage::before  {
+    top: 0;
+}
+
+
+/* zorgt voor de afstand van de blauwe lijn onder de foto */
+.lidmaatschapimage::after,
+.contactimage::after {
+    bottom: 100;
+}
+
+.my-table {
+	border-collapse: collapse;
+	width: 100%;
+	background-color: #ffffff;
+  }
+  
+  .my-table th, .my-table td {
+	border: 3px solid #73C3E0; /* Geeft de tabel een blauwe rand */
+	padding: 8px;
+	text-align: left;
+  }
+  
+  .my-table th {
+	background-color: #ffffff; 
+  }
+
+  /* Een apparte container voor de contact pagina waarbij ik grid gebruik */
+  .containercontact {
+    width: 1100px;
+    overflow: hidden;
+    padding: 40px;
+    margin: 0 auto;
+    background-color: #17262C;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; 
+    align-items: center; 
+}
+
+.contactimage {
+    grid-column: 1 / 2; /* Plaats de afbeelding in de eerste kolom */
+}
+
+
+.map {
+    grid-column: 2 / 3; /* Plaats de kaart in de tweede kolom */
+}
+
+.contactimage img {
+    max-width: 100%; 
+    display: block;
+}
+
+.map iframe {
+    width: 100%; 
+}
+
+.sponsor {
+    margin-bottom: 40px;
+    overflow: hidden; 
+}
+
+
+.sponsor-img {
+    width: 200px; 
+    float: left;
+    margin-right: 20px; 
+}
+
+
+/* Maakt de website responsive */
+@media only screen and (max-width: 767px) {
+	.container {
+		width: auto; 
+		overflow: hidden; 
+		padding: 40px;
+		margin: 0 auto; 
+		background-color: #17262C;
+	}
+
+	.container {
+        grid-template-columns: 1fr; 
+    }
+
+    .lidmaatschapimage {
+        grid-column: 1; 
+    }
+
+	.map iframe {
+		width: auto; 
+	}
+
+	.map {
+		grid-column: 1; 
+	}
+	
+	.contactimage {
+		grid-column: 1;
+	}
+	
+	.content {
+		grid-column: 1; 
+	}	
+
+	.contactimage img {
+		max-width: 100%; 
+		position: relative;
+		width: 100%;
+		display: block;
+	}
+
+	.lidmaatschapimage {
+		position: relative;
+		width: 100%;
+		margin: 0 auto;
+		grid-column: 1;
+	}
+
+	.containercontact {
+		width: auto;
+		overflow: hidden;
+		padding: 40px;
+		margin: 0 auto;
+		background-color: #17262C;
+		display: grid;
+		grid-template-columns: 1fr; 
+		gap: 20px; 
+		align-items: center; 
+	}
+
+	.containerlid {
+		width: auto;
+		overflow: hidden; 
+		padding: 40px;
+		margin: 0 auto; 
+		background-color: #17262C;
+		display: grid;
+		grid-template-columns: 1fr; 
+		gap: 20px; 
+		justify-items: center;
+	}
+
+	.paragraph {
+		grid-column: 1; 
+	}
+
+	.contact {
+		grid-column: 1;
+	}
+
+	.sponsor-img {
+		width: 75px; 
+		float: left;
+		margin-right: 20px; 
+	}
+	
+}

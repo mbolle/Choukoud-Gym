@@ -1,0 +1,141 @@
+/* header */
+@font-face {
+    font-family: koulen;
+    src: url(https://rightfontapp.com/family/koulen);
+  }
+
+header {
+	background-color: black; 
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+	z-index: 1000;
+}
+
+.navbar{
+    font-family: 'koulen';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* De grote en breete van het logo */
+.navbar img {
+    height: 100px; 
+	width: auto; 
+}
+
+nav ul {
+    display: flex;
+    color: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px; 
+    position: relative; 
+}
+
+nav ul li:last-child {
+    margin-right: 0; 
+}
+
+nav ul li a {
+    font-family: 'koulen';
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: white;
+    position: relative; 
+}
+
+/* Zorgt voor een blauw streepje voor de active pagina */
+nav ul li.active a::before {
+    content: '';
+    position: absolute;
+    left: -10px; 
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 6px;
+    height: 20px; 
+    background-color: #73C3E0; 
+}
+
+nav ul li.active a {
+    color: white; /* De pagina waarop je bent in de navbar*/
+}
+
+/* Maakt de website responsive */
+@media only screen and (max-width: 767px) {
+    header {
+        background-color: black; 
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+    
+    .navbar{
+        font-family: 'koulen';
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    
+    .navbar img {
+        height: 100px; 
+        width: auto; 
+    }
+    
+    nav ul {
+        flex-direction: column;
+        display: flex;
+        color: white;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li {
+        margin-right: 20px; 
+        position: relative; 
+    }
+    
+    nav ul li:last-child {
+        margin-right: 0; 
+    }
+    
+    nav ul li a {
+        font-family: 'koulen';
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: white;
+        position: relative; 
+    }
+    
+    /* Zorgt voor een blauw streepje voor de active pagina */
+    nav ul li.active a::before {
+        content: '';
+        position: absolute;
+        left: -10px; 
+        top: 50%; 
+        transform: translateY(-50%);
+        width: 6px;
+        height: 20px; 
+        background-color: #73C3E0; 
+    }
+    
+    nav ul li.active a {
+        color: white; /* De pagina waarop je bent in de navbar*/
+    }
+    
+}
